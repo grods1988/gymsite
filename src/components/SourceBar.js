@@ -6,7 +6,12 @@ import logo from "../images/logo.png";
 function SourceBar() {
   return (
     <div className="container-fluid">
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        variant="light"
+        className="bg-warning"
+      >
         <Container>
           <Navbar.Brand href="#home">
             <img src={logo} alt="logo" />

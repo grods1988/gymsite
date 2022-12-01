@@ -9,16 +9,16 @@ import family from "../images/family.webp";
 function Hero() {
   return (
     <div className="container-fluid ">
-      <img
-        src={Hero1}
-        alt="Hero"
-        style={{ width: "100%", overflow: "hidden" }}
-      />
-      <div className="d-none d-sm-flex justify-content-evenly ">
+      <img src={Hero1} alt="Hero" style={{ width: "100%" }} />
+      <div className="d-none d-sm-flex justify-content-evenly bg-warning">
         <Card style={{ width: "18rem" }} className="shadow-lg">
-          <Card.Img variant="top" src={positivity} />
+          <div className="inner">
+            <Card.Img variant="top" src={positivity} />
+          </div>
           <Card.Body>
-            <Card.Title>Positivity</Card.Title>
+            <Card.Title>
+              <span className="yellow">|</span>Positivity
+            </Card.Title>
             <Card.Text>
               Differences are encouraged. Kindness, professionalism, fun and
               motivation. We strongly believe that people who feel inspired
@@ -28,9 +28,13 @@ function Hero() {
           </Card.Body>
         </Card>
         <Card style={{ width: "18rem" }} className="shadow-lg">
-          <Card.Img variant="top" src={diversity} />
+          <div className="inner">
+            <Card.Img variant="top" src={diversity} />
+          </div>
           <Card.Body>
-            <Card.Title>Diversity</Card.Title>
+            <Card.Title>
+              <span className="yellow">|</span> Diversity
+            </Card.Title>
             <Card.Text>
               Come as you are! There is no one type or way of training in our
               diverse community. Your body can do anything. You just have to
@@ -39,9 +43,13 @@ function Hero() {
           </Card.Body>
         </Card>
         <Card style={{ width: "18rem" }} className="shadow-lg">
-          <Card.Img variant="top" src={fun} />
+          <div className="inner">
+            <Card.Img variant="top" src={fun} />
+          </div>
           <Card.Body>
-            <Card.Title>Fun</Card.Title>
+            <Card.Title>
+              <span className="yellow">|</span>Fun
+            </Card.Title>
             <Card.Text>
               We know serious fitness is hard, but that doesn't mean it can't be
               fun. Our team will make sure that you get the most out of the time
@@ -50,9 +58,13 @@ function Hero() {
           </Card.Body>
         </Card>
         <Card style={{ width: "18rem" }} className="shadow-lg">
-          <Card.Img variant="top" src={family} />
+          <div className="inner">
+            <Card.Img variant="top" src={family} />
+          </div>
           <Card.Body>
-            <Card.Title>Family Fitness</Card.Title>
+            <Card.Title>
+              <span className="yellow">|</span>Family Fitness
+            </Card.Title>
             <Card.Text>
               Come with your partners and other family members to get Family
               packages and deals. Customised to your liking.
@@ -60,6 +72,8 @@ function Hero() {
           </Card.Body>
         </Card>
       </div>
+      {/* Offers */}
+      <div></div>
     </div>
   );
 }
